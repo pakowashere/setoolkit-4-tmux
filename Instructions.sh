@@ -19,8 +19,8 @@ clear
 	  echo "      -{ Instructions } "
 	  echo 
 	  echo "Choose your language"
-	  echo "1 English"
-	  echo "2 Espanol"
+	  echo "1) English"
+	  echo "2) Espanol"
 	  echo
 	  read -p "R= " answer
 	  clear
@@ -33,9 +33,13 @@ case $answer in
 	echo ">>>>>>>>>>> STEPS <<<<<<<<<<"
 	echo
 	echo "[1] git clone https://github.com/ivam3/setoolkit-4-tmux"
-	echo "[2] tar -xf SET_7.7.2.gz"
-	echo "[3] cd setoolkit"
-	echo "[4] python setup.py install"
+	echo "[2] cd setoolkit-4-tmux"
+	echo "[3] apt install setoolkit_7.7.4.deb"
+	echo "[4] cd ../;chmod 777 -R pexpect;python2 pexpect/setup.py"
+	echo "[5] chmod 777 -R pycrypto-2.6.1;python2 pycrypto-2.6.1/setup.py"
+	echo "[6] chmod 777 -R ptyprocess;python2 ptyprocess/ptyprocess/ptyprocess.py"
+	echo "[7] rm -r setoolkit-4-tmux ptyprocess pexpect pycrypto-2.6.1"
+	echo "[!] Remember , Metasploit-Framework Required"
 	echo "
 	"
 	echo "                        THATS ALL !! "
@@ -54,11 +58,14 @@ case $answer in
 	echo ">>>>>>>>>>> PASOS <<<<<<<<<<"
 	echo
 	echo "[1] git clone https://github.com/ivam3/setoolkit-4-tmux"
-	echo "[2] tar -xf SET_7.7.2.gz"
-        echo "[3] cd setoolkit"
-        echo "[4] python setup.py install"
-        echo "
-        "
+	echo "[2] cd setoolkit-4-tmux"
+        echo "[3] apt install setoolkit_7.7.4.deb"
+        echo "[4] cd ../;chmod 777 -R pexpect;python2 pexpect/setup.py"
+	echo "[5] chmod 777 -R pycrypto-2.6.1;python2 pycrypto-2.6.1/setup.py"
+	echo "[6] chmod 777 -R ptyprocess;python2 ptyprocess/ptyprocess/ptyprocess.py"
+	echo "[7] rm -r setoolkit-4-tmux ptyprocess pexpect pycrypto-2.6.1"
+	echo "[!] Recuerda , Se Requiere Metasploit-Framework"
+	echo "                                                                                                        "
         echo "                           LISTO !! "
         echo "      Ahora solo correrlo ejecutando el comando setoolkit"
 	echo
